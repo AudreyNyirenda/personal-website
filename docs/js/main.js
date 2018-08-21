@@ -90,11 +90,11 @@
 /*!**************************!*\
   !*** ./src/js/header.js ***!
   \**************************/
-/*! exports provided: header */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"header\", function() { return header; });\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ \"./src/js/utils.js\");\n\n\nfunction header(el) {\n  el.addEventListener('click', event => {\n    event.currentTarget.classList.toggle('teal')\n  })\n}\n\n\n//# sourceURL=webpack:///./src/js/header.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.header = header;\n\nvar _utils = __webpack_require__(/*! ./utils */ \"./src/js/utils.js\");\n\nfunction header(el) {\n  el.addEventListener('click', function (event) {\n    event.currentTarget.classList.toggle('teal');\n  });\n}\n\n//# sourceURL=webpack:///./src/js/header.js?");
 
 /***/ }),
 
@@ -102,11 +102,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!******************************!*\
   !*** ./src/js/insertDate.js ***!
   \******************************/
-/*! exports provided: insertDate */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"insertDate\", function() { return insertDate; });\nfunction insertDate(el) {\n  el.innerHTML = new Date()\n}\n\n\n//# sourceURL=webpack:///./src/js/insertDate.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.insertDate = insertDate;\nfunction insertDate(el) {\n  el.innerHTML = new Date();\n}\n\n//# sourceURL=webpack:///./src/js/insertDate.js?");
 
 /***/ }),
 
@@ -114,11 +114,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ \"./src/js/utils.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./src/js/header.js\");\n/* harmony import */ var _insertDate__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./insertDate */ \"./src/js/insertDate.js\");\n\n\n\n\n\nObject(_utils__WEBPACK_IMPORTED_MODULE_0__[\"initModule\"])('header', _header__WEBPACK_IMPORTED_MODULE_1__[\"header\"])\nObject(_utils__WEBPACK_IMPORTED_MODULE_0__[\"initModule\"])('insertDate', _insertDate__WEBPACK_IMPORTED_MODULE_2__[\"insertDate\"])\n\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("\n\nvar _utils = __webpack_require__(/*! ./utils */ \"./src/js/utils.js\");\n\nvar _header = __webpack_require__(/*! ./header */ \"./src/js/header.js\");\n\nvar _insertDate = __webpack_require__(/*! ./insertDate */ \"./src/js/insertDate.js\");\n\n(0, _utils.initModule)('header', _header.header);\n(0, _utils.initModule)('insertDate', _insertDate.insertDate);\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 
@@ -126,11 +126,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
 /*!*************************!*\
   !*** ./src/js/utils.js ***!
   \*************************/
-/*! exports provided: get, getAll, initModule */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"get\", function() { return get; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getAll\", function() { return getAll; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"initModule\", function() { return initModule; });\nfunction get(sel) {\n  return document.querySelector(sel)\n}\n\nfunction getAll(sel) {\n  return Array.from(document.querySelectorAll(sel))\n}\n\nfunction initModule(name, callback) {\n  getAll(`[data-js=${name}]`).forEach(el => {\n    callback(el)\n  })\n}\n\n\n//# sourceURL=webpack:///./src/js/utils.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.get = get;\nexports.getAll = getAll;\nexports.initModule = initModule;\nfunction get(sel) {\n  return document.querySelector(sel);\n}\n\nfunction getAll(sel) {\n  return Array.from(document.querySelectorAll(sel));\n}\n\nfunction initModule(name, callback) {\n  getAll(\"[data-js=\" + name + \"]\").forEach(function (el) {\n    callback(el);\n  });\n}\n\n//# sourceURL=webpack:///./src/js/utils.js?");
 
 /***/ })
 
